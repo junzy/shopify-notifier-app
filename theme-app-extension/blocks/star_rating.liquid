@@ -1,0 +1,8 @@
+{% assign avg_rating = product.metafields.demo.avg_rating.value | round %}
+{% render "stars", rating: 4 %}
+{% schema %}
+{
+  "name": "Star rating",
+  "target": "section"
+}
+{% endschema %}
